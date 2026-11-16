@@ -1,0 +1,12 @@
+device_id,timestamp_utc,metric_name,value
+router_01,2026-11-12T08:05:00Z,cpu_usage_pct,52
+router_01,2026-11-12T08:05:00Z,cpu_usage_pct,52
+router_02,2026-11-12T08:05:00Z,cpu_usage_pct,109
+router_03,2026-11-12T08:05:00Z,temperature_c,not_a_number
+,2026-11-12T08:05:00Z,ingress_mbps,22
+router_04,wrong-date,cpu_usage_pct,21
+router_02,2026-11-12T08:35:00Z,ingress_mbps,-10
+router_03,2026-11-12T09:05:00Z,cpu_usage_pct,61
+router_03,2026-11-12T09:05:00Z,cpu_usage_pct,63
+router_04,,temperature_c,42
+router_01,2026-11-12T09:05:00Z,,15

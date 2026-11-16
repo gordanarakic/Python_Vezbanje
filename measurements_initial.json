@@ -1,0 +1,578 @@
+[
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-10T09:05:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 22.0
+  },
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-10T09:05:00Z",
+    "metric_name": "temperature_c",
+    "value": 36.0
+  },
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-10T09:05:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 45.0
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-10T09:05:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 37.0
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-10T09:05:00Z",
+    "metric_name": "temperature_c",
+    "value": 40.0
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-10T09:05:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 67.0
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-10T09:05:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 52.0
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-10T09:05:00Z",
+    "metric_name": "temperature_c",
+    "value": 44.0
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-10T09:05:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 89.0
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-10T09:05:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 67.0
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-10T09:05:00Z",
+    "metric_name": "temperature_c",
+    "value": 48.0
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-10T09:05:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 111.0
+  },
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-10T09:35:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 25.5
+  },
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-10T09:35:00Z",
+    "metric_name": "temperature_c",
+    "value": 37.2
+  },
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-10T09:35:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 53.5
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-10T09:35:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 41.5
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-10T09:35:00Z",
+    "metric_name": "temperature_c",
+    "value": 41.2
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-10T09:35:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 75.5
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-10T09:35:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 57.5
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-10T09:35:00Z",
+    "metric_name": "temperature_c",
+    "value": 45.2
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-10T09:35:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 97.5
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-10T09:35:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 73.5
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-10T09:35:00Z",
+    "metric_name": "temperature_c",
+    "value": 49.2
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-10T09:35:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 119.5
+  },
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-10T10:05:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 29.0
+  },
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-10T10:05:00Z",
+    "metric_name": "temperature_c",
+    "value": 38.5
+  },
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-10T10:05:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 62.0
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-10T10:05:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 46.0
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-10T10:05:00Z",
+    "metric_name": "temperature_c",
+    "value": 42.5
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-10T10:05:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 84.0
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-10T10:05:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 59.0
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-10T10:05:00Z",
+    "metric_name": "temperature_c",
+    "value": 46.5
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-10T10:05:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 106.0
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-10T10:05:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 76.0
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-10T10:05:00Z",
+    "metric_name": "temperature_c",
+    "value": 50.5
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-10T10:05:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 128.0
+  },
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-10T10:35:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 32.5
+  },
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-10T10:35:00Z",
+    "metric_name": "temperature_c",
+    "value": 36.0
+  },
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-10T10:35:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 70.5
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-10T10:35:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 50.5
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-10T10:35:00Z",
+    "metric_name": "temperature_c",
+    "value": 40.0
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-10T10:35:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 92.5
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-10T10:35:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 64.5
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-10T10:35:00Z",
+    "metric_name": "temperature_c",
+    "value": 44.0
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-10T10:35:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 114.5
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-10T10:35:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 78.5
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-10T10:35:00Z",
+    "metric_name": "temperature_c",
+    "value": 48.0
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-10T10:35:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 136.5
+  },
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-11T09:05:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 36.0
+  },
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-11T09:05:00Z",
+    "metric_name": "temperature_c",
+    "value": 37.2
+  },
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-11T09:05:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 45.0
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-11T09:05:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 51.0
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-11T09:05:00Z",
+    "metric_name": "temperature_c",
+    "value": 41.2
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-11T09:05:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 67.0
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-11T09:05:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 66.0
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-11T09:05:00Z",
+    "metric_name": "temperature_c",
+    "value": 45.2
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-11T09:05:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 89.0
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-11T09:05:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 81.0
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-11T09:05:00Z",
+    "metric_name": "temperature_c",
+    "value": 49.2
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-11T09:05:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 111.0
+  },
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-11T09:35:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 39.5
+  },
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-11T09:35:00Z",
+    "metric_name": "temperature_c",
+    "value": 38.5
+  },
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-11T09:35:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 53.5
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-11T09:35:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 55.5
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-11T09:35:00Z",
+    "metric_name": "temperature_c",
+    "value": 42.5
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-11T09:35:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 75.5
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-11T09:35:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 71.5
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-11T09:35:00Z",
+    "metric_name": "temperature_c",
+    "value": 46.5
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-11T09:35:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 97.5
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-11T09:35:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 87.5
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-11T09:35:00Z",
+    "metric_name": "temperature_c",
+    "value": 50.5
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-11T09:35:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 119.5
+  },
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-11T10:05:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 43.0
+  },
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-11T10:05:00Z",
+    "metric_name": "temperature_c",
+    "value": 36.0
+  },
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-11T10:05:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 62.0
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-11T10:05:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 60.0
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-11T10:05:00Z",
+    "metric_name": "temperature_c",
+    "value": 40.0
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-11T10:05:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 84.0
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-11T10:05:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 73.0
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-11T10:05:00Z",
+    "metric_name": "temperature_c",
+    "value": 44.0
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-11T10:05:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 106.0
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-11T10:05:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 90.0
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-11T10:05:00Z",
+    "metric_name": "temperature_c",
+    "value": 48.0
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-11T10:05:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 128.0
+  },
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-11T10:35:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 46.5
+  },
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-11T10:35:00Z",
+    "metric_name": "temperature_c",
+    "value": 37.2
+  },
+  {
+    "device_id": "router_01",
+    "timestamp_utc": "2026-11-11T10:35:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 70.5
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-11T10:35:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 64.5
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-11T10:35:00Z",
+    "metric_name": "temperature_c",
+    "value": 41.2
+  },
+  {
+    "device_id": "router_02",
+    "timestamp_utc": "2026-11-11T10:35:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 92.5
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-11T10:35:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 78.5
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-11T10:35:00Z",
+    "metric_name": "temperature_c",
+    "value": 45.2
+  },
+  {
+    "device_id": "router_03",
+    "timestamp_utc": "2026-11-11T10:35:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 114.5
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-11T10:35:00Z",
+    "metric_name": "cpu_usage_pct",
+    "value": 92.5
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-11T10:35:00Z",
+    "metric_name": "temperature_c",
+    "value": 49.2
+  },
+  {
+    "device_id": "router_04",
+    "timestamp_utc": "2026-11-11T10:35:00Z",
+    "metric_name": "ingress_mbps",
+    "value": 136.5
+  }
+]
