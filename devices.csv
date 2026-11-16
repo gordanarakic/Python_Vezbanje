@@ -1,0 +1,6 @@
+device_id,name,location,device_type
+router_01,Core A,Site East,router
+router_02,Core B,Site East,router
+router_03,Edge A,Site West,router
+router_04,Edge B,Site West,router
+router_05,Spare C,Site North,router
