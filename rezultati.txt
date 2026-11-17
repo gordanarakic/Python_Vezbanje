@@ -1,1 +1,5 @@
-router_05		Spare C		Site North		router		
+router_01     8      34.25    46.5
+router_02     8      50.75    64.5
+router_03     8      65.25    78.5
+router_04     8      80.75    92.5
+Ruteri koji su prekoracili prag (59.0) su:{'router_03', 'router_04', 'router_02'}

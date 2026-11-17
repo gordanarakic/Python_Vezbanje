@@ -4,6 +4,7 @@ import json
 from datetime import datetime
 from zoneinfo import ZoneInfo
 import psycopg
+import polars as pl
 
 logger=logging.getLogger(__name__)
 
@@ -184,6 +185,11 @@ def ispis_fajl(glavna_lista,merenje):
     set_prekoracenja=prekoraceni_uredjaji(prag,merenje)
     rezultat.write(f"Ruteri koji su prekoracili prag ({prag}) su:{set_prekoracenja}")
 
+
+
+
+
+
 '''KONEKCIJA SA BAZOM'''
 def povezivanje_sa_bazom():
     lozinka=input("Unesite lozinku: ")
@@ -203,8 +209,6 @@ def ispis_upita(upit):
             rez.write(f"{i[j]}\t\t")
         rez.write("\n")
             
-
-
 '''SQL: Pregled uredjaja'''
 def pregled_uredjaja(conn):
     upit="""select d.device_id,d.name,d.location,d.device_type,count(m.id) as broj_merenja
@@ -255,8 +259,48 @@ def uredjaji_bez_merenja(conn):
         cur.execute(upit)
         ispis_upita(cur.fetchall())
 
-def main():
-    podesi_loggovanje()
+'''Prosecan CPU po lokaciji'''
+def prosek_cpu_po_lokaciji(conn):
+    upit="""select d.location,AVG(m.value) as prosecno_opterecenje
+    from devices d
+    left JOIN measurements m on m.device_id=d.device_id and m.metric_name LIKE 'cpu%'
+    GROUP BY d.location"""
+
+    with conn.cursor() as cur:
+        cur.execute(upit)
+        ispis_upita(cur.fetchall())
+
+
+
+
+
+'''POLARS'''
+def citanje_csv(fajl):
+    try:
+        df=pl.read_csv(fajl)
+        return df
+    except FileNotFoundError:
+        logger.error("Fajl nije pronadjen!")
+        return None
+
+def df_po_metrikama(df,metrika):
+    df2=df.filter(pl.col("metric_name").str.contains(metrika))
+    return df2
+
+def izvestaj(df):
+    df1=df.group_by("device_id").agg(
+            pl.col("device_id").count().alias("broj_merenja"),
+            pl.col("value").mean().alias("prosek"),
+            pl.col("value").max().alias("najveci")
+        )
+    rez=open("rezultati.txt","w")
+    rez.write(str(df1))
+   
+
+
+
+'''POKRETANJE'''
+def citanje_preko_baze():
     conn=povezivanje_sa_bazom()
     if conn is None:
         return
@@ -265,23 +309,30 @@ def main():
         max_cpu_po_uredjaju(conn)
         merenja_po_satu(conn)
         uredjaji_bez_merenja(conn)
+        prosek_cpu_po_lokaciji(conn)   
 
+def citanje_polars():
+    df=citanje_csv("measurements_initial.csv")
+    if df is None:
+         return
+    izvestaj(df_po_metrikama(df,"cpu_usage_pct"))
+
+def citanje_python():
+    merenje=citanjeFajla('measurements_initial 1.csv')
+    #merenje=citanjeFajla('measurements_initial.json')
+    if merenje is None:
+         return
+    if provera_ispravnosti(merenje)==True:
+        logger.error("Podaci nisu ispravni")
+        return
+       
+    uredjaji=lista_uredjaja(merenje)
+    glavna_lista=dodavanje_merenja(uredjaji,merenje)
+    glavna_lista=dodavanje_proseka(uredjaji,merenje,glavna_lista)
+    glavna_lista=dodavanje_max(uredjaji,merenje,glavna_lista)
     
-    # merenje=citanjeFajla('measurements_initial 1.csv')
-    # #merenje=citanjeFajla('measurements_initial.json')
-    # if merenje is None:
-    #     return
-    # if provera_ispravnosti(merenje)==True:
-    #     logger.error("Podaci nisu ispravni")
-    #     return
-   
-    # uredjaji=lista_uredjaja(merenje)
-    # glavna_lista=dodavanje_merenja(uredjaji,merenje)
-    # glavna_lista=dodavanje_proseka(uredjaji,merenje,glavna_lista)
-    # glavna_lista=dodavanje_max(uredjaji,merenje,glavna_lista)
-
-    # ispis_fajl(glavna_lista,merenje)
-
+    ispis_fajl(glavna_lista,merenje)
+    
     #provera ponavljanja merenja
     # merenje2=citanjeFajla('measurements_edge_cases.csv')  
     # if merenje2 is None:
@@ -290,6 +341,20 @@ def main():
     #     logger.error("Podaci nisu ispravni")
     #     return
     # ispis_losih_merenja(merenje2)
+            
+
+def main():
+    podesi_loggovanje()
+
+    '''Citanje dokumenta preko baze'''
+    #citanje_preko_baze()
+
+    '''Citanje dokumenta iz pythona'''
+    citanje_python()
+
+    '''Citanje preko polarsa'''
+    #citanje_polars()
+
 
 main()
     
